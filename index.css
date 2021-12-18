@@ -1,0 +1,41 @@
+header{
+    margin: 0%;
+    padding: 0%;
+}
+
+footer{
+    margin: 0%;
+    padding: 0%;
+}
+
+h1 {
+    margin: 0%;
+    padding: 0%;
+    background-clip: border-box;
+    background: linear-gradient(to bottom, skyblue, white 50%, skyblue);
+    color: orangered;
+    font-family: 'Hi Melody',cursive;
+    font-size: 8em;
+    text-align: center;
+    width: 100%;
+    height: 300px;
+    line-height: 300px;
+    text-shadow: 2px 2px 16px yellow;
+    letter-spacing: 30px;
+}
+
+footer p {
+    margin: 0%;
+    padding: 0%;
+    background-clip: border-box;
+    background-color: green;
+    color: brown;
+    text-align: center;
+}
+
+#mypick {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}

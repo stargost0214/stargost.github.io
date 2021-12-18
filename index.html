@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Hi+Melody&display=swap');
+    </style>
+</head>
+<body>
+    <header>
+        <h1>pIckMAGE</h1>
+        <label for="getURL">URL 입력 <input type="search" id="getURL" value="URL"></label>
+        <button type="submit" id="pick">Pick Up</button>
+    </header>
+
+    <main>
+        <p>▶이미지를 클릭하면 해당 사이트로 이동◀</p>
+        <div id="mypick">
+            <img src="" alt="">
+        </div>
+    </main>
+
+    <footer>
+        <p><strong>경북대학교 웹프로그래밍 기초</strong></p>
+    </footer>
+
+    <script>
+        function move(event){
+            window.open(this.src);
+        }
+
+        var pick = document.querySelector('#pick');
+        function make(){
+            var space = document.getElementById("mypick");
+            var newP = document.createElement("img");
+            newP.setAttribute("src", document.getElementById("getURL").value);
+            space.appendChild(newP);
+            newP.onclick=move;
+        }
+        pick.onclick = make;
+
+    </script>
+</body>
+</html>
